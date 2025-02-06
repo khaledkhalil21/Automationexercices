@@ -32,8 +32,8 @@ public class Testcase1 {
 			System.out.println("New User is not displayed");
 		}
 		
-		driver.findElement(By.name("name")).sendKeys("Khaled");
-		driver.findElement(By.cssSelector("#form > div > div > div:nth-child(3) > div > form > input[type=email]:nth-child(3)")).sendKeys("kaka21khalil21@gmail.com");
+		driver.findElement(By.name("name")).sendKeys("gladiator");
+		driver.findElement(By.cssSelector("#form > div > div > div:nth-child(3) > div > form > input[type=email]:nth-child(3)")).sendKeys("gladiator@gmail.com");
 		
 		driver.findElement(By.cssSelector("#form > div > div > div:nth-child(3) > div > form > button")).click();
 		
@@ -51,7 +51,7 @@ public class Testcase1 {
 		
 		WebElement day = driver.findElement(By.id("days"));
 		Select selectday = new Select(day);
-		selectday.selectByValue("12");
+		selectday.selectByValue("13");
 		Thread.sleep(2000);
 		
 		WebElement month = driver.findElement(By.id("months"));
@@ -61,7 +61,7 @@ public class Testcase1 {
 		
 		WebElement year = driver.findElement(By.id("years"));
 		Select selectyear = new Select(year);
-		selectyear.selectByValue("1992");
+		selectyear.selectByValue("1993");
 		Thread.sleep(2000);
 		
 		driver.findElement(By.id("newsletter")).click();
